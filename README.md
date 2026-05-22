@@ -1,5 +1,10 @@
 # Sistem Prediksi Bahaya Gas Beracun dan Anomali Termal pada Tambang Bawah Tanah berbasis AIoT
 
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=flat&logo=raspberrypi&logoColor=white)
+![MQTT](https://img.shields.io/badge/MQTT-660066?style=flat&logo=mqtt&logoColor=white)
+![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=flat&logo=telegram&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat&logo=googlegemini&logoColor=white)
+![Metabase](https://img.shields.io/badge/Metabase-509EE3?style=flat&logo=metabase&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-In_Development-yellow?style=flat)
 
 ---
@@ -175,7 +180,7 @@ Berikut adalah dokumentasi fisik dari alat/perangkat keras yang telah dirakit da
 
 * **Protokol Komunikasi:** MQTT (Format Payload: JSON)
 * **Backend Integration Engine:** n8n Workflow Automation
-* **Artificial Intelligence:** Gemini 2.5 LLM/Prediction Model via API
+* **Artificial Intelligence:** Gemini 3.1 Flash LLM/Prediction Model via API
 * **Database Management System:** PostgreSQL
 * **Data Visualization Tool:** Metabase (Frontend Dashboard)
 * **Alerting Platform:** Telegram Bot API
