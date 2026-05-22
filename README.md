@@ -1,6 +1,6 @@
 # Sistem Prediksi Bahaya Gas Beracun dan Anomali Termal pada Tambang Bawah Tanah berbasis AIoT
 
-[![Tech Stack](https://img.shields.io/badge/Status-Project%20Development-blue)](https://github.com/)
+![Status](https://img.shields.io/badge/Status-In_Development-yellow?style=flat)
 
 ---
 
@@ -25,15 +25,11 @@ Proyek ini dilatarbelakangi oleh tragedi nyata, salah satunya **Tragedi Tambang 
 
 ### Solusi yang Ditawarkan
 
-Sistem mengklasifikasikan kondisi tambang bawah tanah ke dalam 3 tingkatan status menggunakan *Rule-Based Logic* berdasarkan pembacaan fisik sensor:
+Kami mengembangkan sistem berbasis AIoT yang memantau kondisi tambang bawah tanah secara real-time menggunakan sensor gas dan suhu. Data dari ESP32 diteruskan melalui Raspberry Pi menuju server untuk diproses oleh n8n, disimpan ke PostgreSQL, divisualisasikan melalui Metabase, serta digunakan untuk mengirim notifikasi Telegram ketika terjadi kondisi tidak normal.
 
-| Status | Batas Suhu (DHT22) | Batas Gas (MQ-6)* | Logika Sistem & Aksi |
-| :--- | :--- | :--- | :--- |
-| **AMAN** | < 30°C | < 200 PPM | **Kondisi Normal.** Suhu udara dan kadar gas berada dalam batas wajar untuk pekerja tambang. <br> *Aksi:* Data diarsipkan ke Database, Metabase diperbarui berkala. |
-| **WASPADA** | 30°C - 38°C | 200 PPM - 500 PPM | **Deteksi Anomali Awal.** Sistem mendeteksi adanya indikasi pemanasan atau kebocoran gas secara bertahap.<br> *Aksi:* Sistem mengirim notifikasi peringatan awal (*statis*) ke Telegram. |
-| **BAHAYA** | > 38°C | > 500 PPM | **Kondisi Kritis.** Risiko tinggi kebakaran atau kontaminasi gas mematikan yang mengancam nyawa.<br> *Aksi:* **Sistem memicu alarm evakuasi darurat otomatis** via Telegram. |
+Sistem ini menggabungkan dua mekanisme utama: alert otomatis berbasis rule-based logic untuk respons cepat, dan chatbot Telegram berbasis Gemini AI untuk membantu pengguna menanyakan status, riwayat data, statistik, atau analisis kondisi tambang secara interaktif.
 
-*> *Catatan: Pada prototipe ini digunakan MQ-6 sebagai Proof of Concept. Pada implementasi nyata akan menggunakan MQ-7 untuk mendeteksi ambang batas CO.*
+Detail ambang batas status keamanan dijelaskan pada bagian **Parameter Standar Acuan Status Keamanan**.
 
 ---
 
@@ -99,6 +95,8 @@ Sistem mengklasifikasikan kondisi tambang bawah tanah ke dalam 3 tingkatan statu
 | **BAHAYA** | > 38°C <br>*(Panas ekstrem/kebakaran)* | > 500 PPM <br>*(Gas beracun pekat)* | **Kondisi Kritis.** Risiko tinggi kebakaran bawah tanah atau kontaminasi gas yang mengancam nyawa.<br> *Aksi:* **Telegram langsung memicu alarm darurat secara otomatis** untuk evakuasi pekerja. |
 
 Dalam standar keselamatan kerja (K3) tambang, kita harus menggunakan Prinsip Garis Pertahanan Terlemah (Worst-Case Scenario). Artinya, jika salah satu parameter sudah masuk zona merah/kuning, maka status keseluruhan harus langsung naik ke level tersebut demi keselamatan nyawa pekerja, tidak boleh dirata-rata.
+
+*> *Catatan: Pada prototipe ini digunakan MQ-6 sebagai Proof of Concept. Pada implementasi nyata akan menggunakan MQ-7 untuk mendeteksi ambang batas CO.*
 
 ---
 
