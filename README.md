@@ -41,13 +41,7 @@ Dengan sistem ini, peringatan dini (*early warning*) dapat diberikan lebih cepat
 
 ## Flow System
 
-# Sistem Prediksi Bahaya Gas Beracun dan Anomali Termal Tambang Bawah Tanah Berbasis AIoT
-
-Sistem pemantauan dan prediksi berbasis AIoT (*Artificial Intelligence of Things*) yang dirancang untuk mendeteksi risiko gas berbahaya dan anomali termal di area tambang bawah tanah secara *real-time*.
-
----
-
-## Arsitektur Sistem (Berdasarkan Flowchart)
+### Arsitektur Sistem
 
 Sistem ini dirancang dengan alur data sekuensial dari pengumpulan data fisik hingga visualisasi akhir dan sistem peringatan:
 
@@ -72,7 +66,7 @@ Sistem ini dirancang dengan alur data sekuensial dari pengumpulan data fisik hin
 5. **Frontend & Visualization Layer (Monitoring)**
    * **Metabase (Frontend):** Bertindak sebagai *user interface* utama yang menarik data hasil prediksi dari database untuk disajikan dalam bentuk *dashboard* visual interaktif bagi manajemen tambang.
    
-## Parameter Standar Acuan Status Keamanan
+### Parameter Standar Acuan Status Keamanan
 
 Model AI mengklasifikasikan kondisi tambang bawah tanah ke dalam 3 tingkatan status berdasarkan kombinasi pembacaan fisik sensor dan analisis tren waktu (*time-series anomaly detection*):
 
@@ -84,7 +78,7 @@ Model AI mengklasifikasikan kondisi tambang bawah tanah ke dalam 3 tingkatan sta
 
 ---
 
-## Fitur Chatbot & Alert Telegram
+### Fitur Chatbot & Alert Telegram
 
 Telegram Bot dalam sistem ini bekerja secara dua arah: **Push Notification (Alerting)** dan **Pull Request (Chatbot Interaktif)**. Pekerja atau pengawas tambang dapat mengirimkan perintah berikut untuk mendapatkan informasi *on-demand*:
 
