@@ -98,9 +98,11 @@ Sistem mengklasifikasikan kondisi tambang bawah tanah ke dalam 3 tingkatan statu
 | **WASPADA** | 30°C - 38°C | 200 PPM - 500 PPM | **Deteksi Anomali Awal.** Sistem mendeteksi adanya indikasi anomali termal atau kenaikan gas secara bertahap.<br> *Aksi:* Mengirim notifikasi awal ke Telegram dan menyimpan status ke database. |
 | **BAHAYA** | > 38°C <br>*(Panas ekstrem/kebakaran)* | > 500 PPM <br>*(Gas beracun pekat)* | **Kondisi Kritis.** Risiko tinggi kebakaran bawah tanah atau kontaminasi gas yang mengancam nyawa.<br> *Aksi:* **Telegram langsung memicu alarm darurat secara otomatis** untuk evakuasi pekerja. |
 
+Dalam standar keselamatan kerja (K3) tambang, kita harus menggunakan Prinsip Garis Pertahanan Terlemah (Worst-Case Scenario). Artinya, jika salah satu parameter sudah masuk zona merah/kuning, maka status keseluruhan harus langsung naik ke level tersebut demi keselamatan nyawa pekerja, tidak boleh dirata-rata.
+
 ---
 
-## Fitur Chatbot & Alert Telegram
+### Fitur Chatbot & Alert Telegram
 
 Sistem notifikasi pada Telegram Bot ini beroperasi menggunakan pendekatan **Hybrid (Static Push + AI Conversational Pull)** untuk memastikan keseimbangan antara kecepatan peringatan dan kedalaman informasi:
 
