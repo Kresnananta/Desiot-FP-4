@@ -76,6 +76,8 @@ Model AI mengklasifikasikan kondisi tambang bawah tanah ke dalam 3 tingkatan sta
 | **WASPADA** | 30°C - 38°C <br>*(Atau lonjakan > 2°C/menit)* | 200 PPM - 500 PPM <br>*(Ada tren kenaikan grafik)* | **Deteksi Anomali Awal.** AI mendeteksi adanya indikasi anomali termal atau kebocoran gas tipis secara bertahap.<br> *Aksi:* Mengirim notifikasi awal ke Telegram. |
 | **BAHAYA** | > 38°C <br>*(Panas ekstrem/kebakaran)* | > 500 PPM <br>*(Gas beracun pekat)* | **Kondisi Kritis.** Risiko tinggi kebakaran bawah tanah atau kontaminasi gas yang mengancam nyawa.<br> *Aksi:* **Telegram langsung memicu alarm darurat secara otomatis** untuk evakuasi pekerja. |
 
+Dalam standar keselamatan kerja (K3) tambang, kita harus menggunakan Prinsip Garis Pertahanan Terlemah (Worst-Case Scenario). Artinya, jika salah satu parameter sudah masuk zona merah/kuning, maka status keseluruhan harus langsung naik ke level tersebut demi keselamatan nyawa pekerja, tidak boleh dirata-rata.
+
 ---
 
 ### Fitur Chatbot & Alert Telegram
