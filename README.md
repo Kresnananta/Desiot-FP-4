@@ -198,12 +198,12 @@ Berikut adalah rancangan visual dari mesin otomasi backend (*integration engine*
 ### 1. Workflow Jalur Peringatan Dini (Static Alerting System)
 <img src="public/n8n_workflow_alert.png" alt="Workflow n8n Jalur Alerting Statis" width="900">
 
-* **Takarir (Caption):** Implementasi otomasi *event-driven* berbasis protokol MQTT untuk menangkap *payload* JSON sensor secara *real-time*. Node ini menjalankan mesin penyeleksi logika komparasi *threshold* (IF-ELSE) untuk memisahkan data ke dalam klasifikasi status **AMAN**, **WASPADA**, dan **BAHAYA**. Jika zona kritis terdeteksi, *workflow* langsung memicu instruksi `sendMessage` dan `pinChatMessage` secara sekuensial ke API Telegram guna menjamin kecepatan hantaran notifikasi evakuasi (*zero-delay latency*).
+Implementasi otomasi *event-driven* berbasis protokol MQTT untuk menangkap *payload* JSON sensor secara *real-time*. Node ini menjalankan mesin penyeleksi logika komparasi *threshold* (IF-ELSE) untuk memisahkan data ke dalam klasifikasi status **AMAN**, **WASPADA**, dan **BAHAYA**. Jika zona kritis terdeteksi, *workflow* langsung memicu instruksi `sendMessage` dan `pinChatMessage` secara sekuensial ke API Telegram guna menjamin kecepatan hantaran notifikasi evakuasi (*zero-delay latency*).
 
 ### 2. Workflow Jalur Chatbot Interaktif (Interactive AI Agent)
 <img src="public/n8n_workflow_chatbot.png" alt="Workflow n8n Jalur Chatbot MinervaAI" width="900">
 
-* **Takarir (Caption):** Arsitektur interaksi kognitif yang menjembatani *webhook* Telegram dengan mesin inferensi LLM. *Workflow* ini mengintegrasikan node `Switch` sebagai pemilah perintah *on-demand* (`/status`, `/history`, `/predict`, `/stats`, `/showgraph` ) langsung ke *database* PostgreSQL. Pada kondisi *fallback* (percakapan bebas), aliran data dihubungkan ke `AI Agent` yang ditenagai oleh Gemini Context Engine serta kueri riwayat tambahan, memungkinkan operator melakukan konsultasi taktis penanggulangan bencana K3 tambang secara natural dan kontekstual.
+Arsitektur interaksi kognitif yang menjembatani *webhook* Telegram dengan mesin inferensi LLM. *Workflow* ini mengintegrasikan node `Switch` sebagai pemilah perintah *on-demand* (`/status`, `/history`, `/predict`, `/stats`, `/showgraph` ) langsung ke *database* PostgreSQL. Pada kondisi *fallback* (percakapan bebas), aliran data dihubungkan ke `AI Agent` yang ditenagai oleh Gemini Context Engine serta kueri riwayat tambahan, memungkinkan operator melakukan konsultasi taktis penanggulangan bencana K3 tambang secara natural dan kontekstual.
 
 ---
 
