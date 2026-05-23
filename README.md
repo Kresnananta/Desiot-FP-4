@@ -153,13 +153,17 @@ Pastikan sistem Anda telah menginstal:
 
 ## Foto Alat
 
-Berikut adalah dokumentasi fisik dari alat/perangkat keras yang telah dirakit dan digunakan dalam proyek ini:
-
-| Pandangan Atas | Pandangan Samping / Detail Komponen |
-| :---: | :---: |
-| <!-- Masukkan tag foto di sini, contoh: --> <img src="https://via.placeholder.com/350x250" width="350" alt="Alap Tampak Atas"> | <img src="https://via.placeholder.com/350x250" width="350" alt="Detail Komponen"> |
-
-*Keterangan: Berikan sedikit penjelasan mengenai foto alat di atas, misalnya wadah yang digunakan atau posisi peletakan sensor.*
+| No | Nama File | Nama Komponen | Deskripsi / Fungsi Utama |
+| :---: | :--- | :--- | :--- |
+| 1 | <img src="public/Breadboard.jpg" width="150"> | Breadboard / Project Board | Papan tempat merangkai komponen elektronik secara sementara tanpa perlu menyolder. |
+| 2 | <img src="public/Esp 32.jpg" width="150"> | ESP32 | Mikrokontroler yang dilengkapi dengan modul Wi-Fi dan Bluetooth bawaan untuk proyek IoT. |
+| 3 | <img src="public/Jumper.jpg" width="150"> | Kabel Jumper | Kabel penghubung antar komponen elektronik pada breadboard atau mikrokontroler. |
+| 4 | <img src="public/Raspberry Pi 4.jpg" width="150"> | Raspberry Pi 4 | Komputer papan tunggal (Single Board Computer) yang berfungsi sebagai server lokal atau otak pemrosesan data. |
+| 5 | <img src="public/dht22.jpg" width="150"> | Sensor DHT22 | Sensor digital yang digunakan untuk mengukur suhu udara dan kelembaban relatif (*relative humidity*). |
+| 6 | <img src="public/led.jpeg" width="150"> | LED (*Light Emitting Diode*) | Komponen semikonduktor yang memancarkan cahaya sebagai indikator visual status sistem. |
+| 7 | <img src="public/mq6.jpg" width="150"> | Sensor MQ-6 | Sensor gas yang sensitif terhadap kebocoran gas LPG, butana, dan propana. |
+| 8 | <img src="public/resistor.jpg" width="150"> | Resistor | Komponen elektronik pasif yang berfungsi untuk membatasi atau mengatur arus listrik dalam rangkaian. |
+| 9 | <img src="public/type c.jpg" width="150"> | Kabel USB Type-C | Menyuplai daya listrik ke perangkat (ESP32/Raspberry Pi) serta jalur transfer kode program dari komputer. |
 
 ---
 
