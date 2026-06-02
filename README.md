@@ -207,17 +207,27 @@ Arsitektur interaksi kognitif yang menjembatani *webhook* Telegram dengan mesin 
 
 ---
 
-## Video Demo & Dashboard Metabase
+## Dokumentasi Dashboard Metabase
 
-## Video Demo 
-[Download / Tonton Video](docs/Video Demo DIOT.mp4)
+Dashboard ini menampilkan kondisi riil atmosfer tambang melalui grafik suhu dan kadar gas karbon monoksida (CO) serta data real-time dari sensor. Informasi status ditampilkan secara otomatis sesuai kondisi lingkungan:
 
-## 1 Dashboard Metabase Kondisi Aman
+### 1. Dashboard Metabase Kondisi Aman
 <img src="public/metabase_aman.png" alt="Dashboard Metabase Kondisi Aman" width="900">
 
-## 2 Dashboard Metabase Kondisi Waspada
+Suhu dan kadar gas berada dalam batas normal. Dashboard menampilkan status AMAN dengan penjelasan bahwa kondisi tambang stabil, sehingga pekerja dapat melanjutkan aktivitas dengan tenang sambil tetap mematuhi protokol K3.
+
+### 2. Dashboard Metabase Kondisi Waspada
 <img src="public/metabase_waspada.png" alt="Dashboard Metabase Kondisi Waspada" width="900">
 
-## 3 Dashboard Metabase Kondisi Bahaya
+Terjadi kenaikan suhu atau kadar gas mendekati ambang batas. Dashboard menampilkan status WASPADA dengan himbauan agar pekerja meningkatkan kewaspadaan, menggunakan APD dengan benar, dan mengikuti instruksi pengawas lapangan.
+
+### 3. Dashboard Metabase Kondisi Bahaya
 <img src="public/metabase_bahaya.png" alt="Dashboard Metabase Kondisi Bahaya" width="900">
+
+Suhu atau kadar gas melebihi ambang batas aman. Dashboard menampilkan status BAHAYA dengan instruksi tegas agar pekerja segera menghentikan aktivitas dan keluar dari area tambang sesuai jalur evakuasi yang telah ditentukan.
+
+
+## Video Demo 
+[Video Demo](https://drive.google.com/file/d/1a0kc2NfJCm7c-7gWl1iVu2iHGqChK0L8/view?usp=drive_link)
+
 
