@@ -209,3 +209,15 @@ Arsitektur interaksi kognitif yang menjembatani *webhook* Telegram dengan mesin 
 
 ## Video Demo & Dashboard Metabase
 
+## Video Demo 
+[Download / Tonton Video](docs/Video Demo DIOT.mp4)
+
+## 1 Dashboard Metabase Kondisi Aman
+<img src="public/metabase_aman.png" alt="Dashboard Metabase Kondisi Aman" width="900">
+
+## 2 Dashboard Metabase Kondisi Waspada
+<img src="public/metabase_waspada.png" alt="Dashboard Metabase Kondisi Waspada" width="900">
+
+## 3 Dashboard Metabase Kondisi Bahaya
+<img src="public/metabase_bahaya.png" alt="Dashboard Metabase Kondisi Bahaya" width="900">
+
